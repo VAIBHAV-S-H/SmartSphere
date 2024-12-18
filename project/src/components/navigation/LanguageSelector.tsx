@@ -7,10 +7,14 @@ const LanguageSelector: React.FC = () => {
     <div className="flex items-center space-x-2 border-l pl-4">
       <button className="flex items-center space-x-1 text-gray-900">
         <Globe className="h-5 w-5" />
-        <span>EN</span>
+        <span>{LANGUAGES[0].code}</span>
       </button>
       <span className="text-gray-300">|</span>
-      <button className="text-gray-900">ID</button>
+      {LANGUAGES.slice(1).map((lang) => (
+        <button key={lang.code} className="text-gray-900">
+          {lang.code}
+        </button>
+      ))}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Search, Mail, User, Globe } from 'lucide-react';
 import Logo from './Logo';
 

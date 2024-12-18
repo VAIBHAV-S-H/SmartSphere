@@ -1,4 +1,3 @@
-import React from 'react';
 import { Activity, Leaf, Lightbulb, MapPin, BarChart2, Bell } from 'lucide-react';
 
 const features = [
